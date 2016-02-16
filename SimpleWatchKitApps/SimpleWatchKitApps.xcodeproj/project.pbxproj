@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A717E7791BD83D650007C947 /* ImageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A717E7781BD83D650007C947 /* ImageInterfaceController.m */; };
+		A71DC2681B588C1400572A09 /* RemoteVideo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC2671B588C1400572A09 /* RemoteVideo2Controller.m */; };
+		A71DD88D1B30D1DD007E3386 /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DD88C1B30D1DD007E3386 /* VideoController.m */; };
+		A71DD8901B30D203007E3386 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DD88F1B30D203007E3386 /* AudioController.m */; };
+		A71DD8931B32425A007E3386 /* BundleAudio2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DD8921B32425A007E3386 /* BundleAudio2Controller.m */; };
+		A71DD8961B324662007E3386 /* AlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DD8951B324662007E3386 /* AlertController.m */; };
+		A7203EF31B5D72C600FE1ED4 /* RemoteVideo3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A7203EF21B5D72C600FE1ED4 /* RemoteVideo3Controller.m */; };
+		A7372D1B1BA0CBBF00B2A57F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7372D1A1BA0CBBF00B2A57F /* AVKit.framework */; };
+		A754255B1BBE25FF00540C1B /* WKAudioFileQueuePlayerControllerInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A754255A1BBE25FF00540C1B /* WKAudioFileQueuePlayerControllerInterfaceController.m */; };
+		A758C07D1BE80DBF008FEDCC /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A758C07C1BE80DBF008FEDCC /* ar.lproj */; };
+		A766DC081B4F968700D8A512 /* AVMediaPlaybackController.m in Sources */ = {isa = PBXBuildFile; fileRef = A766DC071B4F968700D8A512 /* AVMediaPlaybackController.m */; };
+		A77AD9CC1B5072CF00EA602C /* AVPlayBackInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AD9C71B5072CF00EA602C /* AVPlayBackInterfaceController.m */; };
+		A77AD9CD1B5072CF00EA602C /* AVPlayBackPresenterInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AD9C91B5072CF00EA602C /* AVPlayBackPresenterInterfaceController.m */; };
+		A77AD9CE1B5072CF00EA602C /* RecordingInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AD9CB1B5072CF00EA602C /* RecordingInterfaceController.m */; };
+		A77B147D1B06B17900E73BD5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77B147B1B06B17900E73BD5 /* Interface.storyboard */; };
+		A77B147F1B06B17900E73BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77B147E1B06B17900E73BD5 /* Assets.xcassets */; };
+		A77B14861B06B17A00E73BD5 /* SimpleWatchKitApps.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A77B14851B06B17A00E73BD5 /* SimpleWatchKitApps.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A77B148E1B06B17A00E73BD5 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77B148D1B06B17A00E73BD5 /* InterfaceController.m */; };
+		A77B14911B06B17A00E73BD5 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A77B14901B06B17A00E73BD5 /* ExtensionDelegate.m */; };
+		A77B14941B06B17A00E73BD5 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A77B14931B06B17A00E73BD5 /* NotificationController.m */; };
+		A77B14961B06B17A00E73BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77B14951B06B17A00E73BD5 /* Assets.xcassets */; };
+		A77B149A1B06B17A00E73BD5 /* SimpleWatchKitApps.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A77B14791B06B17900E73BD5 /* SimpleWatchKitApps.app */; };
+		A7857B321B2B9AA8005CD559 /* MediaFiles in Resources */ = {isa = PBXBuildFile; fileRef = A7857B311B2B9AA8005CD559 /* MediaFiles */; };
+		A7857B471B2B9C4C005CD559 /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7857B3A1B2B9C4C005CD559 /* AnimationController.m */; };
+		A7857B481B2B9C4C005CD559 /* BundleAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7857B3C1B2B9C4C005CD559 /* BundleAudioController.m */; };
+		A7857B4A1B2B9C4C005CD559 /* BundleVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7857B401B2B9C4C005CD559 /* BundleVideoController.m */; };
+		A7857B4B1B2B9C4C005CD559 /* RemoteAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7857B421B2B9C4C005CD559 /* RemoteAudioController.m */; };
+		A7857B4C1B2B9C4C005CD559 /* RemoteVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7857B441B2B9C4C005CD559 /* RemoteVideoController.m */; };
+		A7857B4D1B2B9C4C005CD559 /* StickyController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7857B461B2B9C4C005CD559 /* StickyController.m */; };
+		A7857B5C1B2F752A005CD559 /* AnimationSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7857B5B1B2F752A005CD559 /* AnimationSelectorController.m */; };
+		A7857B5F1B2F75A1005CD559 /* AnimationAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7857B5E1B2F75A1005CD559 /* AnimationAPIController.m */; };
+		A786B13A1BC5BBB200D0F9D3 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A786B1391BC5BBB200D0F9D3 /* WatchKit.framework */; };
+		A78C034A1B06CFE2006D1173 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78C03491B06CFE2006D1173 /* WatchKit.framework */; };
+		A78C034C1B06D986006D1173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78C034B1B06D986006D1173 /* UIKit.framework */; };
+		A78C034E1B06D9F3006D1173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78C034D1B06D9F3006D1173 /* UIKit.framework */; };
+		A7943F901BA0EC40007DD84C /* BundleAudio3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A7372D1D1BA0D0D300B2A57F /* BundleAudio3Controller.m */; };
+		A7943F911BA0EC4C007DD84C /* RemoteAudio2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A7372D201BA0D17500B2A57F /* RemoteAudio2Controller.m */; };
+		A7A6377F1BBB743800E3E2BC /* RemoteVideo4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A6377E1BBB743800E3E2BC /* RemoteVideo4Controller.m */; };
+		A7A637821BBB748800E3E2BC /* BundleVideo2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A637811BBB748800E3E2BC /* BundleVideo2Controller.m */; };
+		A7A762691BE6D59E00501505 /* SemanticInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A762681BE6D59E00501505 /* SemanticInterfaceController.m */; };
+		A7ADE2861B029C4400CCBDA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADE2851B029C4400CCBDA8 /* main.m */; };
+		A7ADE2891B029C4400CCBDA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADE2881B029C4400CCBDA8 /* AppDelegate.m */; };
+		A7ADE28F1B029C4400CCBDA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7ADE28D1B029C4400CCBDA8 /* Main.storyboard */; };
+		A7ADE2911B029C4400CCBDA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7ADE2901B029C4400CCBDA8 /* Images.xcassets */; };
+		A7ADE2941B029C4400CCBDA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7ADE2921B029C4400CCBDA8 /* LaunchScreen.xib */; };
+		A7ADE2A01B029C4400CCBDA8 /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ADE29F1B029C4400CCBDA8 /* TestTests.m */; };
+		A7B082DE1BC70B21001201E6 /* 3gp.3gp in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D21BC70B21001201E6 /* 3gp.3gp */; };
+		A7B082DF1BC70B21001201E6 /* 120fps.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D31BC70B21001201E6 /* 120fps.mp4 */; };
+		A7B082E01BC70B21001201E6 /* aif.aif in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D41BC70B21001201E6 /* aif.aif */; };
+		A7B082E11BC70B21001201E6 /* chrome.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D51BC70B21001201E6 /* chrome.png */; };
+		A7B082E21BC70B21001201E6 /* Death Grips - Get Got.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D61BC70B21001201E6 /* Death Grips - Get Got.mp3 */; };
+		A7B082E31BC70B21001201E6 /* iphone.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D71BC70B21001201E6 /* iphone.mov */; };
+		A7B082E41BC70B21001201E6 /* m4a.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D81BC70B21001201E6 /* m4a.m4a */; };
+		A7B082E51BC70B21001201E6 /* m4v.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D91BC70B21001201E6 /* m4v.m4v */; };
+		A7B082E61BC70B21001201E6 /* mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DA1BC70B21001201E6 /* mp3.mp3 */; };
+		A7B082E71BC70B21001201E6 /* qtmovie.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DB1BC70B21001201E6 /* qtmovie.mov */; };
+		A7B082E81BC70B21001201E6 /* sampleVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DC1BC70B21001201E6 /* sampleVideo.m4v */; };
+		A7B082E91BC70B21001201E6 /* Test_video-480p.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DD1BC70B21001201E6 /* Test_video-480p.mov */; };
+		A7B082EA1BC70B8F001201E6 /* 3gp.3gp in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D21BC70B21001201E6 /* 3gp.3gp */; };
+		A7B082EB1BC70B8F001201E6 /* 120fps.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D31BC70B21001201E6 /* 120fps.mp4 */; };
+		A7B082EC1BC70B8F001201E6 /* aif.aif in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D41BC70B21001201E6 /* aif.aif */; };
+		A7B082ED1BC70B8F001201E6 /* chrome.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D51BC70B21001201E6 /* chrome.png */; };
+		A7B082EE1BC70B8F001201E6 /* Death Grips - Get Got.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D61BC70B21001201E6 /* Death Grips - Get Got.mp3 */; };
+		A7B082EF1BC70B8F001201E6 /* iphone.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D71BC70B21001201E6 /* iphone.mov */; };
+		A7B082F01BC70B8F001201E6 /* m4a.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D81BC70B21001201E6 /* m4a.m4a */; };
+		A7B082F11BC70B8F001201E6 /* m4v.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D91BC70B21001201E6 /* m4v.m4v */; };
+		A7B082F21BC70B8F001201E6 /* mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DA1BC70B21001201E6 /* mp3.mp3 */; };
+		A7B082F31BC70B8F001201E6 /* qtmovie.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DB1BC70B21001201E6 /* qtmovie.mov */; };
+		A7B082F41BC70B8F001201E6 /* sampleVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DC1BC70B21001201E6 /* sampleVideo.m4v */; };
+		A7B082F51BC70B8F001201E6 /* Test_video-480p.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DD1BC70B21001201E6 /* Test_video-480p.mov */; };
+		A7B082F61BC70B96001201E6 /* 3gp.3gp in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D21BC70B21001201E6 /* 3gp.3gp */; };
+		A7B082F71BC70B96001201E6 /* 120fps.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D31BC70B21001201E6 /* 120fps.mp4 */; };
+		A7B082F81BC70B96001201E6 /* aif.aif in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D41BC70B21001201E6 /* aif.aif */; };
+		A7B082F91BC70B96001201E6 /* chrome.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D51BC70B21001201E6 /* chrome.png */; };
+		A7B082FA1BC70B96001201E6 /* Death Grips - Get Got.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D61BC70B21001201E6 /* Death Grips - Get Got.mp3 */; };
+		A7B082FB1BC70B96001201E6 /* iphone.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D71BC70B21001201E6 /* iphone.mov */; };
+		A7B082FC1BC70B96001201E6 /* m4a.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D81BC70B21001201E6 /* m4a.m4a */; };
+		A7B082FD1BC70B96001201E6 /* m4v.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A7B082D91BC70B21001201E6 /* m4v.m4v */; };
+		A7B082FE1BC70B96001201E6 /* mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DA1BC70B21001201E6 /* mp3.mp3 */; };
+		A7B082FF1BC70B96001201E6 /* qtmovie.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DB1BC70B21001201E6 /* qtmovie.mov */; };
+		A7B083001BC70B96001201E6 /* sampleVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DC1BC70B21001201E6 /* sampleVideo.m4v */; };
+		A7B083011BC70B96001201E6 /* Test_video-480p.mov in Resources */ = {isa = PBXBuildFile; fileRef = A7B082DD1BC70B21001201E6 /* Test_video-480p.mov */; };
+		A7EAA05B1B2A2ABA002E445E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EAA05A1B2A2ABA002E445E /* ViewController.m */; };
+		A7F61F541B38B03000D1EE0B /* AnimationAPI2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F61F531B38B03000D1EE0B /* AnimationAPI2Controller.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A77B14871B06B17A00E73BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7ADE2781B029C4400CCBDA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77B14841B06B17A00E73BD5;
+			remoteInfo = "Test WatchKit2 Extension";
+		};
+		A77B14981B06B17A00E73BD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7ADE2781B029C4400CCBDA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77B14781B06B17900E73BD5;
+			remoteInfo = "Test WatchKit2 App";
+		};
+		A7ADE29A1B029C4400CCBDA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7ADE2781B029C4400CCBDA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7ADE27F1B029C4400CCBDA8;
+			remoteInfo = Test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A77B14A01B06B17A00E73BD5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A77B14861B06B17A00E73BD5 /* SimpleWatchKitApps.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77B14A21B06B17A00E73BD5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A77B149A1B06B17A00E73BD5 /* SimpleWatchKitApps.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A717E7771BD83D650007C947 /* ImageInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInterfaceController.h; sourceTree = "<group>"; };
+		A717E7781BD83D650007C947 /* ImageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInterfaceController.m; sourceTree = "<group>"; };
+		A71DC2661B588C1400572A09 /* RemoteVideo2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteVideo2Controller.h; sourceTree = "<group>"; };
+		A71DC2671B588C1400572A09 /* RemoteVideo2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteVideo2Controller.m; sourceTree = "<group>"; };
+		A71DD88B1B30D1DD007E3386 /* VideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoController.h; sourceTree = "<group>"; };
+		A71DD88C1B30D1DD007E3386 /* VideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
+		A71DD88E1B30D203007E3386 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
+		A71DD88F1B30D203007E3386 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
+		A71DD8911B32425A007E3386 /* BundleAudio2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleAudio2Controller.h; sourceTree = "<group>"; };
+		A71DD8921B32425A007E3386 /* BundleAudio2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleAudio2Controller.m; sourceTree = "<group>"; };
+		A71DD8941B324662007E3386 /* AlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertController.h; sourceTree = "<group>"; };
+		A71DD8951B324662007E3386 /* AlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertController.m; sourceTree = "<group>"; };
+		A7203EF11B5D72C600FE1ED4 /* RemoteVideo3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteVideo3Controller.h; path = "../Test WatchKit2 App/RemoteVideo3Controller.h"; sourceTree = "<group>"; };
+		A7203EF21B5D72C600FE1ED4 /* RemoteVideo3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteVideo3Controller.m; path = "../Test WatchKit2 App/RemoteVideo3Controller.m"; sourceTree = "<group>"; };
+		A7203EF41B5DB8BF00FE1ED4 /* SimpleWatchKitApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = SimpleWatchKitApps.entitlements; path = SimpleWatchKitApps/SimpleWatchKitApps.entitlements; sourceTree = "<group>"; };
+		A7372D1A1BA0CBBF00B2A57F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		A7372D1C1BA0D0D300B2A57F /* BundleAudio3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleAudio3Controller.h; sourceTree = "<group>"; };
+		A7372D1D1BA0D0D300B2A57F /* BundleAudio3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleAudio3Controller.m; sourceTree = "<group>"; };
+		A7372D1F1BA0D17500B2A57F /* RemoteAudio2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteAudio2Controller.h; sourceTree = "<group>"; };
+		A7372D201BA0D17500B2A57F /* RemoteAudio2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteAudio2Controller.m; sourceTree = "<group>"; };
+		A75425591BBE25FF00540C1B /* WKAudioFileQueuePlayerControllerInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKAudioFileQueuePlayerControllerInterfaceController.h; sourceTree = "<group>"; };
+		A754255A1BBE25FF00540C1B /* WKAudioFileQueuePlayerControllerInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKAudioFileQueuePlayerControllerInterfaceController.m; sourceTree = "<group>"; };
+		A758C07C1BE80DBF008FEDCC /* ar.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ar.lproj; sourceTree = "<group>"; };
+		A766DC061B4F968700D8A512 /* AVMediaPlaybackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMediaPlaybackController.h; sourceTree = "<group>"; };
+		A766DC071B4F968700D8A512 /* AVMediaPlaybackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMediaPlaybackController.m; sourceTree = "<group>"; };
+		A77AD9C61B5072CF00EA602C /* AVPlayBackInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayBackInterfaceController.h; sourceTree = "<group>"; };
+		A77AD9C71B5072CF00EA602C /* AVPlayBackInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayBackInterfaceController.m; sourceTree = "<group>"; };
+		A77AD9C81B5072CF00EA602C /* AVPlayBackPresenterInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayBackPresenterInterfaceController.h; sourceTree = "<group>"; };
+		A77AD9C91B5072CF00EA602C /* AVPlayBackPresenterInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayBackPresenterInterfaceController.m; sourceTree = "<group>"; };
+		A77AD9CA1B5072CF00EA602C /* RecordingInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingInterfaceController.h; sourceTree = "<group>"; };
+		A77AD9CB1B5072CF00EA602C /* RecordingInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingInterfaceController.m; sourceTree = "<group>"; };
+		A77B14791B06B17900E73BD5 /* SimpleWatchKitApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWatchKitApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77B147C1B06B17900E73BD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A77B147E1B06B17900E73BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77B14801B06B17900E73BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77B14851B06B17A00E73BD5 /* SimpleWatchKitApps.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SimpleWatchKitApps.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77B148B1B06B17A00E73BD5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A77B148C1B06B17A00E73BD5 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		A77B148D1B06B17A00E73BD5 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		A77B148F1B06B17A00E73BD5 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		A77B14901B06B17A00E73BD5 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		A77B14921B06B17A00E73BD5 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		A77B14931B06B17A00E73BD5 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		A77B14951B06B17A00E73BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77B14971B06B17A00E73BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7857B311B2B9AA8005CD559 /* MediaFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MediaFiles; sourceTree = "<group>"; };
+		A7857B391B2B9C4C005CD559 /* AnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationController.h; sourceTree = "<group>"; };
+		A7857B3A1B2B9C4C005CD559 /* AnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationController.m; sourceTree = "<group>"; };
+		A7857B3B1B2B9C4C005CD559 /* BundleAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleAudioController.h; sourceTree = "<group>"; };
+		A7857B3C1B2B9C4C005CD559 /* BundleAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleAudioController.m; sourceTree = "<group>"; };
+		A7857B3F1B2B9C4C005CD559 /* BundleVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleVideoController.h; sourceTree = "<group>"; };
+		A7857B401B2B9C4C005CD559 /* BundleVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleVideoController.m; sourceTree = "<group>"; };
+		A7857B411B2B9C4C005CD559 /* RemoteAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteAudioController.h; sourceTree = "<group>"; };
+		A7857B421B2B9C4C005CD559 /* RemoteAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteAudioController.m; sourceTree = "<group>"; };
+		A7857B431B2B9C4C005CD559 /* RemoteVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteVideoController.h; sourceTree = "<group>"; };
+		A7857B441B2B9C4C005CD559 /* RemoteVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteVideoController.m; sourceTree = "<group>"; };
+		A7857B451B2B9C4C005CD559 /* StickyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickyController.h; sourceTree = "<group>"; };
+		A7857B461B2B9C4C005CD559 /* StickyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickyController.m; sourceTree = "<group>"; };
+		A7857B5A1B2F752A005CD559 /* AnimationSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSelectorController.h; sourceTree = "<group>"; };
+		A7857B5B1B2F752A005CD559 /* AnimationSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSelectorController.m; sourceTree = "<group>"; };
+		A7857B5D1B2F75A1005CD559 /* AnimationAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationAPIController.h; sourceTree = "<group>"; };
+		A7857B5E1B2F75A1005CD559 /* AnimationAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationAPIController.m; sourceTree = "<group>"; };
+		A786B1391BC5BBB200D0F9D3 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		A78C03491B06CFE2006D1173 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		A78C034B1B06D986006D1173 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A78C034D1B06D9F3006D1173 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A7A6377D1BBB743800E3E2BC /* RemoteVideo4Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteVideo4Controller.h; sourceTree = "<group>"; };
+		A7A6377E1BBB743800E3E2BC /* RemoteVideo4Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteVideo4Controller.m; sourceTree = "<group>"; };
+		A7A637801BBB748800E3E2BC /* BundleVideo2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleVideo2Controller.h; sourceTree = "<group>"; };
+		A7A637811BBB748800E3E2BC /* BundleVideo2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleVideo2Controller.m; sourceTree = "<group>"; };
+		A7A762671BE6D59E00501505 /* SemanticInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemanticInterfaceController.h; sourceTree = "<group>"; };
+		A7A762681BE6D59E00501505 /* SemanticInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemanticInterfaceController.m; sourceTree = "<group>"; };
+		A7ADE2801B029C4400CCBDA8 /* SimpleWatchKitApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWatchKitApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7ADE2841B029C4400CCBDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7ADE2851B029C4400CCBDA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7ADE2871B029C4400CCBDA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A7ADE2881B029C4400CCBDA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A7ADE28E1B029C4400CCBDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7ADE2901B029C4400CCBDA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A7ADE2931B029C4400CCBDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A7ADE2991B029C4400CCBDA8 /* SimpleWatchKitApps.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWatchKitApps.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7ADE29E1B029C4400CCBDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7ADE29F1B029C4400CCBDA8 /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
+		A7B082D21BC70B21001201E6 /* 3gp.3gp */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3gp.3gp; path = "Test WatchKit2 Extension/MediaFiles/3gp.3gp"; sourceTree = "<group>"; };
+		A7B082D31BC70B21001201E6 /* 120fps.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 120fps.mp4; path = "Test WatchKit2 Extension/MediaFiles/120fps.mp4"; sourceTree = "<group>"; };
+		A7B082D41BC70B21001201E6 /* aif.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = aif.aif; path = "Test WatchKit2 Extension/MediaFiles/aif.aif"; sourceTree = "<group>"; };
+		A7B082D51BC70B21001201E6 /* chrome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chrome.png; path = "Test WatchKit2 Extension/MediaFiles/chrome.png"; sourceTree = "<group>"; };
+		A7B082D61BC70B21001201E6 /* Death Grips - Get Got.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Death Grips - Get Got.mp3"; path = "Test WatchKit2 Extension/MediaFiles/Death Grips - Get Got.mp3"; sourceTree = "<group>"; };
+		A7B082D71BC70B21001201E6 /* iphone.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = iphone.mov; path = "Test WatchKit2 Extension/MediaFiles/iphone.mov"; sourceTree = "<group>"; };
+		A7B082D81BC70B21001201E6 /* m4a.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = m4a.m4a; path = "Test WatchKit2 Extension/MediaFiles/m4a.m4a"; sourceTree = "<group>"; };
+		A7B082D91BC70B21001201E6 /* m4v.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = m4v.m4v; path = "Test WatchKit2 Extension/MediaFiles/m4v.m4v"; sourceTree = "<group>"; };
+		A7B082DA1BC70B21001201E6 /* mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mp3.mp3; path = "Test WatchKit2 Extension/MediaFiles/mp3.mp3"; sourceTree = "<group>"; };
+		A7B082DB1BC70B21001201E6 /* qtmovie.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = qtmovie.mov; path = "Test WatchKit2 Extension/MediaFiles/qtmovie.mov"; sourceTree = "<group>"; };
+		A7B082DC1BC70B21001201E6 /* sampleVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = sampleVideo.m4v; path = "Test WatchKit2 Extension/MediaFiles/sampleVideo.m4v"; sourceTree = "<group>"; };
+		A7B082DD1BC70B21001201E6 /* Test_video-480p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "Test_video-480p.mov"; path = "Test WatchKit2 Extension/MediaFiles/Test_video-480p.mov"; sourceTree = "<group>"; };
+		A7EAA0591B2A2ABA002E445E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A7EAA05A1B2A2ABA002E445E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A7F61F521B38B03000D1EE0B /* AnimationAPI2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationAPI2Controller.h; sourceTree = "<group>"; };
+		A7F61F531B38B03000D1EE0B /* AnimationAPI2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationAPI2Controller.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A77B14821B06B17A00E73BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A786B13A1BC5BBB200D0F9D3 /* WatchKit.framework in Frameworks */,
+				A78C034C1B06D986006D1173 /* UIKit.framework in Frameworks */,
+				A78C034A1B06CFE2006D1173 /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7ADE27D1B029C4400CCBDA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7372D1B1BA0CBBF00B2A57F /* AVKit.framework in Frameworks */,
+				A78C034E1B06D9F3006D1173 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7ADE2961B029C4400CCBDA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A77B147A1B06B17900E73BD5 /* Test WatchKit2 App */ = {
+			isa = PBXGroup;
+			children = (
+				A758C07C1BE80DBF008FEDCC /* ar.lproj */,
+				A77B147B1B06B17900E73BD5 /* Interface.storyboard */,
+				A77B147E1B06B17900E73BD5 /* Assets.xcassets */,
+				A77B14801B06B17900E73BD5 /* Info.plist */,
+			);
+			path = "Test WatchKit2 App";
+			sourceTree = "<group>";
+		};
+		A77B14891B06B17A00E73BD5 /* Test WatchKit2 Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7857B311B2B9AA8005CD559 /* MediaFiles */,
+				A7857B391B2B9C4C005CD559 /* AnimationController.h */,
+				A7A762671BE6D59E00501505 /* SemanticInterfaceController.h */,
+				A7A762681BE6D59E00501505 /* SemanticInterfaceController.m */,
+				A717E7771BD83D650007C947 /* ImageInterfaceController.h */,
+				A717E7781BD83D650007C947 /* ImageInterfaceController.m */,
+				A75425591BBE25FF00540C1B /* WKAudioFileQueuePlayerControllerInterfaceController.h */,
+				A754255A1BBE25FF00540C1B /* WKAudioFileQueuePlayerControllerInterfaceController.m */,
+				A766DC061B4F968700D8A512 /* AVMediaPlaybackController.h */,
+				A766DC071B4F968700D8A512 /* AVMediaPlaybackController.m */,
+				A77AD9C61B5072CF00EA602C /* AVPlayBackInterfaceController.h */,
+				A77AD9C71B5072CF00EA602C /* AVPlayBackInterfaceController.m */,
+				A77AD9C81B5072CF00EA602C /* AVPlayBackPresenterInterfaceController.h */,
+				A77AD9C91B5072CF00EA602C /* AVPlayBackPresenterInterfaceController.m */,
+				A77AD9CA1B5072CF00EA602C /* RecordingInterfaceController.h */,
+				A77AD9CB1B5072CF00EA602C /* RecordingInterfaceController.m */,
+				A7857B3A1B2B9C4C005CD559 /* AnimationController.m */,
+				A7A637801BBB748800E3E2BC /* BundleVideo2Controller.h */,
+				A7A637811BBB748800E3E2BC /* BundleVideo2Controller.m */,
+				A7A6377D1BBB743800E3E2BC /* RemoteVideo4Controller.h */,
+				A7A6377E1BBB743800E3E2BC /* RemoteVideo4Controller.m */,
+				A7F61F521B38B03000D1EE0B /* AnimationAPI2Controller.h */,
+				A7F61F531B38B03000D1EE0B /* AnimationAPI2Controller.m */,
+				A7857B5A1B2F752A005CD559 /* AnimationSelectorController.h */,
+				A7857B5B1B2F752A005CD559 /* AnimationSelectorController.m */,
+				A7857B5D1B2F75A1005CD559 /* AnimationAPIController.h */,
+				A7857B5E1B2F75A1005CD559 /* AnimationAPIController.m */,
+				A71DD8941B324662007E3386 /* AlertController.h */,
+				A71DD8951B324662007E3386 /* AlertController.m */,
+				A7857B3B1B2B9C4C005CD559 /* BundleAudioController.h */,
+				A7857B3C1B2B9C4C005CD559 /* BundleAudioController.m */,
+				A71DD8911B32425A007E3386 /* BundleAudio2Controller.h */,
+				A71DD8921B32425A007E3386 /* BundleAudio2Controller.m */,
+				A7372D1C1BA0D0D300B2A57F /* BundleAudio3Controller.h */,
+				A7372D1D1BA0D0D300B2A57F /* BundleAudio3Controller.m */,
+				A7857B411B2B9C4C005CD559 /* RemoteAudioController.h */,
+				A7857B421B2B9C4C005CD559 /* RemoteAudioController.m */,
+				A7372D1F1BA0D17500B2A57F /* RemoteAudio2Controller.h */,
+				A7372D201BA0D17500B2A57F /* RemoteAudio2Controller.m */,
+				A71DD88B1B30D1DD007E3386 /* VideoController.h */,
+				A71DD88C1B30D1DD007E3386 /* VideoController.m */,
+				A7857B3F1B2B9C4C005CD559 /* BundleVideoController.h */,
+				A7857B401B2B9C4C005CD559 /* BundleVideoController.m */,
+				A7857B431B2B9C4C005CD559 /* RemoteVideoController.h */,
+				A7857B441B2B9C4C005CD559 /* RemoteVideoController.m */,
+				A71DC2661B588C1400572A09 /* RemoteVideo2Controller.h */,
+				A71DC2671B588C1400572A09 /* RemoteVideo2Controller.m */,
+				A7203EF11B5D72C600FE1ED4 /* RemoteVideo3Controller.h */,
+				A7203EF21B5D72C600FE1ED4 /* RemoteVideo3Controller.m */,
+				A7857B451B2B9C4C005CD559 /* StickyController.h */,
+				A7857B461B2B9C4C005CD559 /* StickyController.m */,
+				A77B148C1B06B17A00E73BD5 /* InterfaceController.h */,
+				A77B148D1B06B17A00E73BD5 /* InterfaceController.m */,
+				A77B148F1B06B17A00E73BD5 /* ExtensionDelegate.h */,
+				A77B14901B06B17A00E73BD5 /* ExtensionDelegate.m */,
+				A77B14921B06B17A00E73BD5 /* NotificationController.h */,
+				A77B14931B06B17A00E73BD5 /* NotificationController.m */,
+				A77B14951B06B17A00E73BD5 /* Assets.xcassets */,
+				A77B14971B06B17A00E73BD5 /* Info.plist */,
+				A77B148A1B06B17A00E73BD5 /* Supporting Files */,
+				A71DD88E1B30D203007E3386 /* AudioController.h */,
+				A71DD88F1B30D203007E3386 /* AudioController.m */,
+			);
+			path = "Test WatchKit2 Extension";
+			sourceTree = "<group>";
+		};
+		A77B148A1B06B17A00E73BD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A77B148B1B06B17A00E73BD5 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7ADE2771B029C4400CCBDA8 = {
+			isa = PBXGroup;
+			children = (
+				A7B082D21BC70B21001201E6 /* 3gp.3gp */,
+				A7B082D31BC70B21001201E6 /* 120fps.mp4 */,
+				A7B082D41BC70B21001201E6 /* aif.aif */,
+				A7B082D51BC70B21001201E6 /* chrome.png */,
+				A7B082D61BC70B21001201E6 /* Death Grips - Get Got.mp3 */,
+				A7B082D71BC70B21001201E6 /* iphone.mov */,
+				A7B082D81BC70B21001201E6 /* m4a.m4a */,
+				A7B082D91BC70B21001201E6 /* m4v.m4v */,
+				A7B082DA1BC70B21001201E6 /* mp3.mp3 */,
+				A7B082DB1BC70B21001201E6 /* qtmovie.mov */,
+				A7B082DC1BC70B21001201E6 /* sampleVideo.m4v */,
+				A7B082DD1BC70B21001201E6 /* Test_video-480p.mov */,
+				A786B1391BC5BBB200D0F9D3 /* WatchKit.framework */,
+				A7372D1A1BA0CBBF00B2A57F /* AVKit.framework */,
+				A7203EF41B5DB8BF00FE1ED4 /* SimpleWatchKitApps.entitlements */,
+				A78C034D1B06D9F3006D1173 /* UIKit.framework */,
+				A78C034B1B06D986006D1173 /* UIKit.framework */,
+				A78C03491B06CFE2006D1173 /* WatchKit.framework */,
+				A7ADE2821B029C4400CCBDA8 /* Test */,
+				A7ADE29C1B029C4400CCBDA8 /* TestTests */,
+				A77B147A1B06B17900E73BD5 /* Test WatchKit2 App */,
+				A77B14891B06B17A00E73BD5 /* Test WatchKit2 Extension */,
+				A7ADE2811B029C4400CCBDA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7ADE2811B029C4400CCBDA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADE2801B029C4400CCBDA8 /* SimpleWatchKitApps.app */,
+				A7ADE2991B029C4400CCBDA8 /* SimpleWatchKitApps.xctest */,
+				A77B14791B06B17900E73BD5 /* SimpleWatchKitApps.app */,
+				A77B14851B06B17A00E73BD5 /* SimpleWatchKitApps.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7ADE2821B029C4400CCBDA8 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADE2871B029C4400CCBDA8 /* AppDelegate.h */,
+				A7ADE2881B029C4400CCBDA8 /* AppDelegate.m */,
+				A7ADE28D1B029C4400CCBDA8 /* Main.storyboard */,
+				A7ADE2901B029C4400CCBDA8 /* Images.xcassets */,
+				A7ADE2921B029C4400CCBDA8 /* LaunchScreen.xib */,
+				A7ADE2831B029C4400CCBDA8 /* Supporting Files */,
+				A7EAA0591B2A2ABA002E445E /* ViewController.h */,
+				A7EAA05A1B2A2ABA002E445E /* ViewController.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A7ADE2831B029C4400CCBDA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADE2841B029C4400CCBDA8 /* Info.plist */,
+				A7ADE2851B029C4400CCBDA8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7ADE29C1B029C4400CCBDA8 /* TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADE29F1B029C4400CCBDA8 /* TestTests.m */,
+				A7ADE29D1B029C4400CCBDA8 /* Supporting Files */,
+			);
+			path = TestTests;
+			sourceTree = "<group>";
+		};
+		A7ADE29D1B029C4400CCBDA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7ADE29E1B029C4400CCBDA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A77B14781B06B17900E73BD5 /* SimpleWatchKitApps WatchKit2 App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77B14A11B06B17A00E73BD5 /* Build configuration list for PBXNativeTarget "SimpleWatchKitApps WatchKit2 App" */;
+			buildPhases = (
+				A77B14771B06B17900E73BD5 /* Resources */,
+				A77B14A01B06B17A00E73BD5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A77B14881B06B17A00E73BD5 /* PBXTargetDependency */,
+			);
+			name = "SimpleWatchKitApps WatchKit2 App";
+			productName = "Test WatchKit2 App";
+			productReference = A77B14791B06B17900E73BD5 /* SimpleWatchKitApps.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A77B14841B06B17A00E73BD5 /* SimpleWatchKitApps WatchKit2 Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77B149F1B06B17A00E73BD5 /* Build configuration list for PBXNativeTarget "SimpleWatchKitApps WatchKit2 Extension" */;
+			buildPhases = (
+				A77B14811B06B17A00E73BD5 /* Sources */,
+				A77B14821B06B17A00E73BD5 /* Frameworks */,
+				A77B14831B06B17A00E73BD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleWatchKitApps WatchKit2 Extension";
+			productName = "Test WatchKit2 Extension";
+			productReference = A77B14851B06B17A00E73BD5 /* SimpleWatchKitApps.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		A7ADE27F1B029C4400CCBDA8 /* SimpleWatchKitApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7ADE2A31B029C4400CCBDA8 /* Build configuration list for PBXNativeTarget "SimpleWatchKitApps" */;
+			buildPhases = (
+				A7ADE27C1B029C4400CCBDA8 /* Sources */,
+				A7ADE27D1B029C4400CCBDA8 /* Frameworks */,
+				A7ADE27E1B029C4400CCBDA8 /* Resources */,
+				A77B14A21B06B17A00E73BD5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A77B14991B06B17A00E73BD5 /* PBXTargetDependency */,
+			);
+			name = SimpleWatchKitApps;
+			productName = Test;
+			productReference = A7ADE2801B029C4400CCBDA8 /* SimpleWatchKitApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7ADE2981B029C4400CCBDA8 /* SimpleWatchKitAppsSimpleWatchKitAppss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7ADE2A61B029C4400CCBDA8 /* Build configuration list for PBXNativeTarget "SimpleWatchKitAppsSimpleWatchKitAppss" */;
+			buildPhases = (
+				A7ADE2951B029C4400CCBDA8 /* Sources */,
+				A7ADE2961B029C4400CCBDA8 /* Frameworks */,
+				A7ADE2971B029C4400CCBDA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7ADE29B1B029C4400CCBDA8 /* PBXTargetDependency */,
+			);
+			name = SimpleWatchKitAppsSimpleWatchKitAppss;
+			productName = TestTests;
+			productReference = A7ADE2991B029C4400CCBDA8 /* SimpleWatchKitApps.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7ADE2781B029C4400CCBDA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Simon Zhu";
+				TargetAttributes = {
+					A77B14781B06B17900E73BD5 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2JCYE4K2L4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A77B14841B06B17A00E73BD5 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2JCYE4K2L4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A7ADE27F1B029C4400CCBDA8 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2JCYE4K2L4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A7ADE2981B029C4400CCBDA8 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = A7ADE27F1B029C4400CCBDA8;
+					};
+				};
+			};
+			buildConfigurationList = A7ADE27B1B029C4400CCBDA8 /* Build configuration list for PBXProject "SimpleWatchKitApps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7ADE2771B029C4400CCBDA8;
+			productRefGroup = A7ADE2811B029C4400CCBDA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7ADE27F1B029C4400CCBDA8 /* SimpleWatchKitApps */,
+				A7ADE2981B029C4400CCBDA8 /* SimpleWatchKitAppsSimpleWatchKitAppss */,
+				A77B14781B06B17900E73BD5 /* SimpleWatchKitApps WatchKit2 App */,
+				A77B14841B06B17A00E73BD5 /* SimpleWatchKitApps WatchKit2 Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A77B14771B06B17900E73BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77B147F1B06B17900E73BD5 /* Assets.xcassets in Resources */,
+				A758C07D1BE80DBF008FEDCC /* ar.lproj in Resources */,
+				A77B147D1B06B17900E73BD5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77B14831B06B17A00E73BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B082F61BC70B96001201E6 /* 3gp.3gp in Resources */,
+				A7B082F71BC70B96001201E6 /* 120fps.mp4 in Resources */,
+				A7B082F81BC70B96001201E6 /* aif.aif in Resources */,
+				A7B082F91BC70B96001201E6 /* chrome.png in Resources */,
+				A7B082FA1BC70B96001201E6 /* Death Grips - Get Got.mp3 in Resources */,
+				A7B082FB1BC70B96001201E6 /* iphone.mov in Resources */,
+				A7B082FC1BC70B96001201E6 /* m4a.m4a in Resources */,
+				A7B082FD1BC70B96001201E6 /* m4v.m4v in Resources */,
+				A7B082FE1BC70B96001201E6 /* mp3.mp3 in Resources */,
+				A7B082FF1BC70B96001201E6 /* qtmovie.mov in Resources */,
+				A7B083001BC70B96001201E6 /* sampleVideo.m4v in Resources */,
+				A7B083011BC70B96001201E6 /* Test_video-480p.mov in Resources */,
+				A77B14961B06B17A00E73BD5 /* Assets.xcassets in Resources */,
+				A7857B321B2B9AA8005CD559 /* MediaFiles in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7ADE27E1B029C4400CCBDA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7ADE28F1B029C4400CCBDA8 /* Main.storyboard in Resources */,
+				A7ADE2941B029C4400CCBDA8 /* LaunchScreen.xib in Resources */,
+				A7ADE2911B029C4400CCBDA8 /* Images.xcassets in Resources */,
+				A7B082DE1BC70B21001201E6 /* 3gp.3gp in Resources */,
+				A7B082DF1BC70B21001201E6 /* 120fps.mp4 in Resources */,
+				A7B082E01BC70B21001201E6 /* aif.aif in Resources */,
+				A7B082E11BC70B21001201E6 /* chrome.png in Resources */,
+				A7B082E21BC70B21001201E6 /* Death Grips - Get Got.mp3 in Resources */,
+				A7B082E31BC70B21001201E6 /* iphone.mov in Resources */,
+				A7B082E41BC70B21001201E6 /* m4a.m4a in Resources */,
+				A7B082E51BC70B21001201E6 /* m4v.m4v in Resources */,
+				A7B082E61BC70B21001201E6 /* mp3.mp3 in Resources */,
+				A7B082E71BC70B21001201E6 /* qtmovie.mov in Resources */,
+				A7B082E81BC70B21001201E6 /* sampleVideo.m4v in Resources */,
+				A7B082E91BC70B21001201E6 /* Test_video-480p.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7ADE2971B029C4400CCBDA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B082EA1BC70B8F001201E6 /* 3gp.3gp in Resources */,
+				A7B082EB1BC70B8F001201E6 /* 120fps.mp4 in Resources */,
+				A7B082EC1BC70B8F001201E6 /* aif.aif in Resources */,
+				A7B082ED1BC70B8F001201E6 /* chrome.png in Resources */,
+				A7B082EE1BC70B8F001201E6 /* Death Grips - Get Got.mp3 in Resources */,
+				A7B082EF1BC70B8F001201E6 /* iphone.mov in Resources */,
+				A7B082F01BC70B8F001201E6 /* m4a.m4a in Resources */,
+				A7B082F11BC70B8F001201E6 /* m4v.m4v in Resources */,
+				A7B082F21BC70B8F001201E6 /* mp3.mp3 in Resources */,
+				A7B082F31BC70B8F001201E6 /* qtmovie.mov in Resources */,
+				A7B082F41BC70B8F001201E6 /* sampleVideo.m4v in Resources */,
+				A7B082F51BC70B8F001201E6 /* Test_video-480p.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A77B14811B06B17A00E73BD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A6377F1BBB743800E3E2BC /* RemoteVideo4Controller.m in Sources */,
+				A7857B481B2B9C4C005CD559 /* BundleAudioController.m in Sources */,
+				A754255B1BBE25FF00540C1B /* WKAudioFileQueuePlayerControllerInterfaceController.m in Sources */,
+				A77AD9CE1B5072CF00EA602C /* RecordingInterfaceController.m in Sources */,
+				A71DD8901B30D203007E3386 /* AudioController.m in Sources */,
+				A7857B471B2B9C4C005CD559 /* AnimationController.m in Sources */,
+				A77AD9CC1B5072CF00EA602C /* AVPlayBackInterfaceController.m in Sources */,
+				A7857B4C1B2B9C4C005CD559 /* RemoteVideoController.m in Sources */,
+				A71DD8961B324662007E3386 /* AlertController.m in Sources */,
+				A7857B5F1B2F75A1005CD559 /* AnimationAPIController.m in Sources */,
+				A7857B4A1B2B9C4C005CD559 /* BundleVideoController.m in Sources */,
+				A7A637821BBB748800E3E2BC /* BundleVideo2Controller.m in Sources */,
+				A7857B5C1B2F752A005CD559 /* AnimationSelectorController.m in Sources */,
+				A7A762691BE6D59E00501505 /* SemanticInterfaceController.m in Sources */,
+				A7857B4B1B2B9C4C005CD559 /* RemoteAudioController.m in Sources */,
+				A7F61F541B38B03000D1EE0B /* AnimationAPI2Controller.m in Sources */,
+				A71DD8931B32425A007E3386 /* BundleAudio2Controller.m in Sources */,
+				A71DD88D1B30D1DD007E3386 /* VideoController.m in Sources */,
+				A7857B4D1B2B9C4C005CD559 /* StickyController.m in Sources */,
+				A71DC2681B588C1400572A09 /* RemoteVideo2Controller.m in Sources */,
+				A77AD9CD1B5072CF00EA602C /* AVPlayBackPresenterInterfaceController.m in Sources */,
+				A766DC081B4F968700D8A512 /* AVMediaPlaybackController.m in Sources */,
+				A77B14911B06B17A00E73BD5 /* ExtensionDelegate.m in Sources */,
+				A77B148E1B06B17A00E73BD5 /* InterfaceController.m in Sources */,
+				A7943F901BA0EC40007DD84C /* BundleAudio3Controller.m in Sources */,
+				A77B14941B06B17A00E73BD5 /* NotificationController.m in Sources */,
+				A717E7791BD83D650007C947 /* ImageInterfaceController.m in Sources */,
+				A7203EF31B5D72C600FE1ED4 /* RemoteVideo3Controller.m in Sources */,
+				A7943F911BA0EC4C007DD84C /* RemoteAudio2Controller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7ADE27C1B029C4400CCBDA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7ADE2891B029C4400CCBDA8 /* AppDelegate.m in Sources */,
+				A7EAA05B1B2A2ABA002E445E /* ViewController.m in Sources */,
+				A7ADE2861B029C4400CCBDA8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7ADE2951B029C4400CCBDA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7ADE2A01B029C4400CCBDA8 /* TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A77B14881B06B17A00E73BD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77B14841B06B17A00E73BD5 /* SimpleWatchKitApps WatchKit2 Extension */;
+			targetProxy = A77B14871B06B17A00E73BD5 /* PBXContainerItemProxy */;
+		};
+		A77B14991B06B17A00E73BD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77B14781B06B17900E73BD5 /* SimpleWatchKitApps WatchKit2 App */;
+			targetProxy = A77B14981B06B17A00E73BD5 /* PBXContainerItemProxy */;
+		};
+		A7ADE29B1B029C4400CCBDA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7ADE27F1B029C4400CCBDA8 /* SimpleWatchKitApps */;
+			targetProxy = A7ADE29A1B029C4400CCBDA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A77B147B1B06B17900E73BD5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A77B147C1B06B17900E73BD5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		A7ADE28D1B029C4400CCBDA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7ADE28E1B029C4400CCBDA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7ADE2921B029C4400CCBDA8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7ADE2931B029C4400CCBDA8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A77B149B1B06B17A00E73BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ENABLE_TESTABILITY = YES;
+				IBSC_MODULE = Test_WatchKit2_Extension;
+				INFOPLIST_FILE = "Test WatchKit2 App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.SimpleWatchKitApps.watchkit2app;
+				PRODUCT_NAME = SimpleWatchKitApps;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A77B149C1B06B17A00E73BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				IBSC_MODULE = Test_WatchKit2_Extension;
+				INFOPLIST_FILE = "Test WatchKit2 App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.SimpleWatchKitApps.watchkit2app;
+				PRODUCT_NAME = SimpleWatchKitApps;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A77B149D1B06B17A00E73BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "Test WatchKit2 Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.SimpleWatchKitApps.watchkit2app.watchkit2extension;
+				PRODUCT_NAME = SimpleWatchKitApps;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A77B149E1B06B17A00E73BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Test WatchKit2 Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.SimpleWatchKitApps.watchkit2app.watchkit2extension;
+				PRODUCT_NAME = SimpleWatchKitApps;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A7ADE2A11B029C4400CCBDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simon Zhu (4X4N23WWWU)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fgnu-inline-asm";
+				PROVISIONING_PROFILE = "ef8d782d-a4de-45a1-a134-b41984104e45";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7ADE2A21B029C4400CCBDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Simon Zhu (4X4N23WWWU)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-fgnu-inline-asm";
+				PROVISIONING_PROFILE = "ef8d782d-a4de-45a1-a134-b41984104e45";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7ADE2A41B029C4400CCBDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.SimpleWatchKitApps;
+				PRODUCT_NAME = SimpleWatchKitApps;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A7ADE2A51B029C4400CCBDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				INFOPLIST_FILE = Test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = apple.SimpleWatchKitApps;
+				PRODUCT_NAME = SimpleWatchKitApps;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A7ADE2A71B029C4400CCBDA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "apple.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = SimpleWatchKitApps;
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleWatchKitApps.temp_caseinsensitive_rename.app/SimpleWatchKitApps.temp_caseinsensitive_rename";
+			};
+			name = Debug;
+		};
+		A7ADE2A81B029C4400CCBDA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "apple.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = SimpleWatchKitApps;
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleWatchKitApps.temp_caseinsensitive_rename.app/SimpleWatchKitApps.temp_caseinsensitive_rename";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A77B149F1B06B17A00E73BD5 /* Build configuration list for PBXNativeTarget "SimpleWatchKitApps WatchKit2 Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77B149D1B06B17A00E73BD5 /* Debug */,
+				A77B149E1B06B17A00E73BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77B14A11B06B17A00E73BD5 /* Build configuration list for PBXNativeTarget "SimpleWatchKitApps WatchKit2 App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77B149B1B06B17A00E73BD5 /* Debug */,
+				A77B149C1B06B17A00E73BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7ADE27B1B029C4400CCBDA8 /* Build configuration list for PBXProject "SimpleWatchKitApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7ADE2A11B029C4400CCBDA8 /* Debug */,
+				A7ADE2A21B029C4400CCBDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7ADE2A31B029C4400CCBDA8 /* Build configuration list for PBXNativeTarget "SimpleWatchKitApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7ADE2A41B029C4400CCBDA8 /* Debug */,
+				A7ADE2A51B029C4400CCBDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7ADE2A61B029C4400CCBDA8 /* Build configuration list for PBXNativeTarget "SimpleWatchKitAppsSimpleWatchKitAppss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7ADE2A71B029C4400CCBDA8 /* Debug */,
+				A7ADE2A81B029C4400CCBDA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7ADE2781B029C4400CCBDA8 /* Project object */;
+}

@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9530" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9514"/>
+    </dependencies>
+    <scenes>
+        <!--Alert Controller-->
+        <scene sceneID="lp8-4U-s5Y">
+            <objects>
+                <controller hidesWhenLoading="NO" id="SDf-oU-Hmo" customClass="AlertController">
+                    <items>
+                        <label width="131" height="70" alignment="center" verticalAlignment="center" text="Some Text..." textAlignment="center" id="5S1-Ox-qXk">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <button width="1" alignment="left" title="Test An Alert" id="uUz-Ct-HNm">
+                            <connections>
+                                <action selector="testAlertButtonClick" destination="SDf-oU-Hmo" id="eeG-tt-ueV"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="5S1-Ox-qXk" id="fZ8-gh-zns"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-304" y="416"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="left" text="Hello. Please pick your desired feature." textAlignment="center" numberOfLines="3" id="amb-Nc-gHq">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <button width="1" alignment="left" title="Animate" id="DyP-U4-fRN">
+                            <connections>
+                                <segue destination="UQd-ko-AOo" kind="push" id="9ak-n7-PtP"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Haptic" id="Vwu-2B-rg9">
+                            <connections>
+                                <action selector="testHepticButtonClick" destination="AgC-eL-Hgc" id="jVU-jC-AAq"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sticky" id="SeO-QK-bqd">
+                            <connections>
+                                <segue destination="8Ua-gh-JQ3" kind="push" id="MwQ-qu-9N3"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Record" id="NhD-w8-Mbz">
+                            <connections>
+                                <segue destination="gfR-yw-p4M" kind="push" id="Scr-TA-rlo"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Audio" id="t6d-fO-fO1">
+                            <connections>
+                                <segue destination="ZJn-Wk-Eeg" kind="push" id="Psv-Sm-Cra"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Image" id="QLT-3h-AIc">
+                            <connections>
+                                <segue destination="Ek3-pF-Bbx" kind="push" id="Pqc-Bc-ps0"/>
+                            </connections>
+                        </button>
+                        <button width="136" alignment="center" verticalAlignment="center" title="Alert" id="KJw-mb-sya">
+                            <connections>
+                                <segue destination="SDf-oU-Hmo" kind="push" id="jsJ-yK-fou"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Video" id="eS8-X6-PNa">
+                            <connections>
+                                <segue destination="6DE-yT-ssT" kind="push" id="b33-jf-Zn1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Semantic" id="eKH-hf-Zsj">
+                            <connections>
+                                <segue destination="Rju-u5-oNj" kind="push" id="qko-Ej-1lm"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-90" y="359.5"/>
+        </scene>
+        <!--Animation Selector Controller-->
+        <scene sceneID="B46-bL-ro7">
+            <objects>
+                <controller hidesWhenLoading="NO" id="UQd-ko-AOo" customClass="AnimationSelectorController">
+                    <items>
+                        <button width="1" height="48" alignment="left" title="Minions Animation (Storyboard)" id="dme-Og-7gv">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                            <connections>
+                                <segue destination="WZD-Gb-iJT" kind="push" id="6e3-QE-pMn"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="48" alignment="left" title="Minions Animation (API)" id="rDS-Fy-pcl">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                            <connections>
+                                <segue destination="Bb2-ED-zq5" kind="push" id="f2o-tR-Toh"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="48" alignment="left" title="Lightsaber Animation (Storyboard)" id="93z-D7-LnD">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                            <connections>
+                                <segue destination="RUl-XP-zcK" kind="push" id="Sd4-cS-ugo"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="48" alignment="left" title="Lightsaber Animation (API)" id="gbv-di-SCd">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                            <connections>
+                                <segue destination="j2n-8P-DAY" kind="push" id="S8u-lv-dse"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-271" y="757"/>
+        </scene>
+        <!--AnimationAPI Controller-->
+        <scene sceneID="NJe-js-cfv">
+            <objects>
+                <controller hidesWhenLoading="NO" id="Bb2-ED-zq5" customClass="AnimationAPIController">
+                    <items>
+                        <imageView height="1" alignment="left" initiallyAnimated="NO" animationDuration="10" id="LpC-wL-5Ut"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="LpC-wL-5Ut" id="5nr-ok-HOv"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-263" y="1029"/>
+        </scene>
+        <!--Animation-->
+        <scene sceneID="IXT-jb-bbV">
+            <objects>
+                <controller identifier="Animation" hidesWhenLoading="NO" id="RUl-XP-zcK" customClass="AnimationController">
+                    <items>
+                        <imageView width="1" height="1" alignment="left" image="lightsaber" id="LGd-6m-8JI"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-52" y="1271"/>
+        </scene>
+        <!--Bundle Audio3 Controller-->
+        <scene sceneID="wXv-9W-R5k">
+            <objects>
+                <controller hidesWhenLoading="NO" id="30C-cZ-88Z" customClass="BundleAudio3Controller">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="23h-bo-kwV">
+                            <connections>
+                                <action selector="Start" destination="30C-cZ-88Z" id="u3M-yr-2TS"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="38" y="1517"/>
+        </scene>
+        <!--AnimationAPI2 Controller-->
+        <scene sceneID="45D-NT-MJT">
+            <objects>
+                <controller hidesWhenLoading="NO" id="j2n-8P-DAY" customClass="AnimationAPI2Controller">
+                    <items>
+                        <imageView height="1" alignment="left" id="Zmf-Ym-vzD"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="Zmf-Ym-vzD" id="Qko-Af-IjX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-258" y="1271"/>
+        </scene>
+        <!--frame-->
+        <scene sceneID="B4Q-yC-tUs">
+            <objects>
+                <controller backgroundImage="frame" hidesWhenLoading="NO" id="WZD-Gb-iJT" customClass="AnimationController"/>
+            </objects>
+            <point key="canvasLocation" x="-61" y="1038"/>
+        </scene>
+        <!--StickyController-->
+        <scene sceneID="tnm-Wz-Qu5">
+            <objects>
+                <controller identifier="StickyController" hidesWhenLoading="NO" id="8Ua-gh-JQ3" customClass="StickyController">
+                    <items>
+                        <button width="1" alignment="left" title="Start Session" id="RT0-KI-jGw">
+                            <connections>
+                                <action selector="startSession" destination="8Ua-gh-JQ3" id="ZWC-LU-DqG"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="End Session" id="wxt-ae-8af">
+                            <connections>
+                                <action selector="endSession" destination="8Ua-gh-JQ3" id="xCu-1h-4xc"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Interrupt Session" id="7tq-Yf-tt7">
+                            <connections>
+                                <action selector="interruptSessionAfter5Seconds" destination="8Ua-gh-JQ3" id="09I-fU-dNS"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="106" y="1070"/>
+        </scene>
+        <!--Audio Controller-->
+        <scene sceneID="EiF-Y4-GeG">
+            <objects>
+                <controller hidesWhenLoading="NO" id="ZJn-Wk-Eeg" customClass="AudioController">
+                    <items>
+                        <button width="136" alignment="left" title="Bundle Audio 1 (presentMediaPlayerControllerWithURL)" id="t84-kh-hPm">
+                            <fontDescription key="font" type="system" pointSize="6"/>
+                            <connections>
+                                <action selector="IBAction" destination="ZJn-Wk-Eeg" id="a0D-Mg-bOX"/>
+                                <segue destination="USC-pn-dzt" kind="push" id="YPE-W8-qQK"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Bundle Audio 2 (presentMediaPlayerControllerWithURL)" id="xU0-TG-5fG">
+                            <fontDescription key="font" type="system" pointSize="6"/>
+                            <connections>
+                                <segue destination="d1M-cc-8EN" kind="push" id="d6s-iX-pfL"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remote Audio 1 (presentMediaPlayerControllerWithURL)" id="ILt-a7-yg0">
+                            <fontDescription key="font" type="system" pointSize="6"/>
+                            <connections>
+                                <segue destination="sHU-XJ-lL5" kind="push" id="yuk-zc-Pjt"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Bundle Audio 3 (WKAudioFilePlayer)" id="kJU-cd-8Hf">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                            <connections>
+                                <segue destination="30C-cZ-88Z" kind="push" id="RJM-zZ-Ich"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remote Audio 2 (WKAudioFilePlayer)" id="n7I-Sd-97n">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                            <connections>
+                                <segue destination="TBV-HG-hgx" kind="push" id="sy3-3x-f8E"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Queue Audio Player (WKAudioFileQueuePlayer)" id="2XA-Ui-ESM">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                            <connections>
+                                <segue destination="9SE-xk-XJn" kind="push" id="wSu-9E-5f8"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="289" y="1116"/>
+        </scene>
+        <!--Remote Video3 Controller-->
+        <scene sceneID="E1N-Ex-8NP">
+            <objects>
+                <controller hidesWhenLoading="NO" id="qWj-VN-5a5" customClass="RemoteVideo3Controller">
+                    <items>
+                        <movie width="1" height="1" alignment="left" id="8Cz-Vg-H7y"/>
+                    </items>
+                    <connections>
+                        <outlet property="player" destination="8Cz-Vg-H7y" id="wyp-kJ-1da"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="696" y="200"/>
+        </scene>
+        <!--Bundle Video Controller-->
+        <scene sceneID="mrJ-Vw-rXD">
+            <objects>
+                <controller hidesWhenLoading="NO" id="imJ-Eh-qcq" customClass="BundleVideoController">
+                    <items>
+                        <movie width="1" height="1" alignment="left" id="6gb-6h-A3Q"/>
+                    </items>
+                    <connections>
+                        <outlet property="player" destination="6gb-6h-A3Q" id="PPl-aZ-UPc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="720" y="475"/>
+        </scene>
+        <!--Remote Video4 Controller-->
+        <scene sceneID="Z94-Ht-gvJ">
+            <objects>
+                <controller id="bs2-Qa-tQx" customClass="RemoteVideo4Controller">
+                    <items>
+                        <movie width="1" height="1" alignment="left" id="W76-1J-haP"/>
+                    </items>
+                    <connections>
+                        <outlet property="movie" destination="W76-1J-haP" id="2RH-TO-lah"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="484" y="889"/>
+        </scene>
+        <!--Remote Video2 Controller-->
+        <scene sceneID="ZrC-Me-Heg">
+            <objects>
+                <controller hidesWhenLoading="NO" id="yKO-vu-D7u" customClass="RemoteVideo2Controller">
+                    <items>
+                        <movie width="1" height="1" alignment="left" id="fcw-Pd-PGa"/>
+                    </items>
+                    <connections>
+                        <outlet property="player" destination="fcw-Pd-PGa" id="JUe-op-6Z8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="864" y="318"/>
+        </scene>
+        <!--Semantic Interface Controller-->
+        <scene sceneID="qDQ-81-dlo">
+            <objects>
+                <controller id="Rju-u5-oNj" customClass="SemanticInterfaceController">
+                    <items>
+                        <label width="136" height="95.5" alignment="left" text="Semantic Content" id="GtV-Kw-Nsb"/>
+                        <movie width="1" height="100" alignment="left" id="1Fv-Jp-7aW"/>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="DlG-uI-bZs"/>
+                        <button width="1" alignment="left" title="Unspecified" id="OE5-0T-DBr">
+                            <connections>
+                                <action selector="setUnspecified" destination="Rju-u5-oNj" id="aMM-mZ-nqs"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Playback (Movie)" id="6xk-fs-pBd">
+                            <connections>
+                                <action selector="setPlayback" destination="Rju-u5-oNj" id="C7r-6v-yNv"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Spatial" id="mrf-h0-QgP">
+                            <connections>
+                                <action selector="setSpatial" destination="Rju-u5-oNj" id="ccX-KG-dZ1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Right to Left" id="trc-1y-Pi9">
+                            <connections>
+                                <action selector="setRightToLeft" destination="Rju-u5-oNj" id="U9e-fS-chX"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Left to Right" id="QU2-Hr-UoF">
+                            <connections>
+                                <action selector="setLeftToRight" destination="Rju-u5-oNj" id="EB6-l7-w1j"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Get Semantic Content" id="Rup-oT-gT0">
+                            <connections>
+                                <action selector="getDirection" destination="Rju-u5-oNj" id="f7C-IU-3fW"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="GtV-Kw-Nsb" id="cT6-g0-tKL"/>
+                        <outlet property="movie" destination="1Fv-Jp-7aW" id="47Y-Bf-ntF"/>
+                        <outlet property="switchRef" destination="DlG-uI-bZs" id="NG4-D1-mBX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="89" y="557"/>
+        </scene>
+        <!--Video Controller-->
+        <scene sceneID="lS9-lP-Cmq">
+            <objects>
+                <controller hidesWhenLoading="NO" id="6DE-yT-ssT" customClass="VideoController">
+                    <items>
+                        <button width="1" alignment="left" title="Bundle Video (presentMediaPlayerController)" id="8e0-dM-7SQ">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                            <connections>
+                                <segue destination="imJ-Eh-qcq" kind="push" id="uM6-rQ-bBB"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Bundle Video (WKInterfaceMovie)" id="9zS-SY-Fwc">
+                            <fontDescription key="font" type="system" pointSize="9"/>
+                            <connections>
+                                <segue destination="B6Q-TW-aSv" kind="push" id="pMJ-nS-LMt"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remote Video (mov - presentMediaPlayerController)" id="NPo-N6-a7k">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                            <connections>
+                                <segue destination="Uc3-yG-fC6" kind="push" id="xNZ-iz-dnW"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remote Video (mp4 - presentMediaPlayerController)" id="EmQ-XB-2DX">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                            <connections>
+                                <segue destination="yKO-vu-D7u" kind="push" id="Jwy-X9-z4z"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title=" Remote Video (3gp - presentMediaPlayerController)" id="nRp-yy-5d0">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                            <connections>
+                                <segue destination="qWj-VN-5a5" kind="push" id="WOY-qw-1tH"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remote Video (mp4 - WKInterfaceMovie)" id="ehG-Ds-Ek2">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                            <connections>
+                                <segue destination="bs2-Qa-tQx" kind="push" id="ZSv-5s-aG5"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="262" y="567.25"/>
+        </scene>
+        <!--Bundle Audio Controller-->
+        <scene sceneID="Jqm-sz-4aa">
+            <objects>
+                <controller hidesWhenLoading="NO" id="USC-pn-dzt" customClass="BundleAudioController">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="qwh-78-Zx0">
+                            <connections>
+                                <action selector="Play" destination="USC-pn-dzt" id="UCh-I4-aXW"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="824" y="1595"/>
+        </scene>
+        <!--Bundle Video2 Controller-->
+        <scene sceneID="NIT-Iu-JgK">
+            <objects>
+                <controller id="B6Q-TW-aSv" customClass="BundleVideo2Controller">
+                    <items>
+                        <movie width="1" height="1" alignment="left" id="Q2e-eq-Gny"/>
+                    </items>
+                    <connections>
+                        <outlet property="movie" destination="Q2e-eq-Gny" id="bAM-F3-e8A"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="918" y="567"/>
+        </scene>
+        <!--RemoteAudio2Controller-->
+        <scene sceneID="ETE-TF-N6d">
+            <objects>
+                <controller identifier="RemoteAudio2Controller" hidesWhenLoading="NO" id="TBV-HG-hgx" customClass="RemoteAudio2Controller">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="bv5-kc-CNt">
+                            <connections>
+                                <action selector="Start" destination="TBV-HG-hgx" id="Arp-1A-bm8"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="538" y="1749"/>
+        </scene>
+        <!--Bundle Audio2 Controller-->
+        <scene sceneID="m5e-YO-Bi5">
+            <objects>
+                <controller hidesWhenLoading="NO" id="d1M-cc-8EN" customClass="BundleAudio2Controller">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="lEt-3E-VIe">
+                            <connections>
+                                <action selector="Play" destination="d1M-cc-8EN" id="uce-el-53U"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="634" y="1531"/>
+        </scene>
+        <!--Audio File Queue Player Controller Interface Controller-->
+        <scene sceneID="Ma0-wU-XUZ">
+            <objects>
+                <controller id="9SE-xk-XJn" customClass="WKAudioFileQueuePlayerControllerInterfaceController">
+                    <items>
+                        <label alignment="left" text="Testing Audio Queue Player" minimumScaleFactor="0.29999999999999999" id="pg7-op-lCu"/>
+                        <label height="25.5" alignment="left" text="(Comes with audio files queued)" minimumScaleFactor="0.5" id="7Zd-Sq-tUU"/>
+                        <button width="1" alignment="left" title="Add AIF" id="nPf-4l-Jz0">
+                            <connections>
+                                <action selector="appendAif" destination="9SE-xk-XJn" id="Qs0-oD-8Ey"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Add Death" id="xIo-fx-EzS">
+                            <connections>
+                                <action selector="appendDeathGrips" destination="9SE-xk-XJn" id="rNJ-tu-3zF"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remove AIF" id="F8E-FK-eMZ">
+                            <connections>
+                                <action selector="removeAif" destination="9SE-xk-XJn" id="6Fb-ig-gtI"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remove Death" id="SOa-4n-XBl">
+                            <connections>
+                                <action selector="removeDeathGrips" destination="9SE-xk-XJn" id="QI7-nu-6PH"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remove All" id="jNi-a6-z5Y">
+                            <connections>
+                                <action selector="removeAll" destination="9SE-xk-XJn" id="aTn-aK-G2R"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Advance (Next)" id="epk-er-5Xo">
+                            <connections>
+                                <action selector="nextItem" destination="9SE-xk-XJn" id="TCg-Ew-xUb"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Show Queue" id="NIY-Be-h0z">
+                            <connections>
+                                <action selector="showAllItems" destination="9SE-xk-XJn" id="YEb-mt-x8p"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="231" y="1737.25"/>
+        </scene>
+        <!--Remote Audio Controller-->
+        <scene sceneID="XL4-bp-yII">
+            <objects>
+                <controller hidesWhenLoading="NO" id="sHU-XJ-lL5" customClass="RemoteAudioController">
+                    <items>
+                        <button width="1" alignment="left" title="Start" id="NYo-Lh-EMW">
+                            <connections>
+                                <action selector="startButton" destination="sHU-XJ-lL5" id="wNI-kp-PK3"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="369" y="1665"/>
+        </scene>
+        <!--Remote Video Controller-->
+        <scene sceneID="NDa-K7-SjZ">
+            <objects>
+                <controller hidesWhenLoading="NO" id="Uc3-yG-fC6" customClass="RemoteVideoController">
+                    <items>
+                        <movie width="1" height="1" alignment="left" id="ig0-bd-lc8"/>
+                    </items>
+                    <connections>
+                        <outlet property="player" destination="ig0-bd-lc8" id="5qk-nh-1n7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="726" y="777"/>
+        </scene>
+        <!--Image Interface Controller-->
+        <scene sceneID="84f-gc-vJq">
+            <objects>
+                <controller id="Ek3-pF-Bbx" customClass="ImageInterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Tint" id="WjK-lp-CgG">
+                            <connections>
+                                <action selector="tint" destination="Ek3-pF-Bbx" id="V6e-QR-KfN"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Disappear" id="iHc-Ci-1S0">
+                            <connections>
+                                <action selector="revert" destination="Ek3-pF-Bbx" id="IhI-3G-sNB"/>
+                            </connections>
+                        </button>
+                        <imageView width="1" height="1" alignment="center" image="chrome" contentMode="scaleAspectFit" id="FPA-sW-bgg"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="FPA-sW-bgg" id="fbt-BE-YOb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="148" y="61.75"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="195" y="356"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="216"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="r4w-Kq-xDQ">
+            <objects>
+                <controller hidesWhenLoading="NO" id="gfR-yw-p4M">
+                    <items>
+                        <button width="1" alignment="left" title="Recording" id="5Jn-s2-QVm">
+                            <connections>
+                                <segue destination="Pl5-X0-SpR" kind="push" id="Dgn-7N-bQD"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Playback Table" id="vVg-A2-Op5">
+                            <connections>
+                                <segue destination="V95-Ax-MIa" kind="push" id="L9r-mT-nXZ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Playback Presentation" id="95j-d4-JYX">
+                            <connections>
+                                <segue destination="K1i-7j-qU8" kind="push" id="HGn-wo-2Np"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-475" y="216"/>
+        </scene>
+        <!--Recording Interface Controller-->
+        <scene sceneID="NW9-hi-iu4">
+            <objects>
+                <controller hidesWhenLoading="NO" id="Pl5-X0-SpR" customClass="RecordingInterfaceController">
+                    <items>
+                        <label width="131" alignment="left" text="Max Rec Dur: 30" id="eum-b2-lCk"/>
+                        <slider width="1" alignment="left" value="30" maximum="360" steps="10" id="tAR-nt-i3P">
+                            <connections>
+                                <action selector="sliderSlide:" destination="Pl5-X0-SpR" id="fSx-v6-Lrc"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="wav - NarrowBand" id="Kgg-AT-Ux4">
+                            <connections>
+                                <action selector="wavNarrowBand" destination="Pl5-X0-SpR" id="bbf-U5-aQV"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="wav - WideBand" id="jpX-IE-fW3">
+                            <connections>
+                                <action selector="wavWideBand" destination="Pl5-X0-SpR" id="tS7-GV-Eza"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="wav - High Quality" id="LoM-g1-a6k">
+                            <connections>
+                                <action selector="wavHighQuality" destination="Pl5-X0-SpR" id="oc6-R0-lhG"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="mp4 - NarrowBand" id="Iif-OY-jQ2">
+                            <connections>
+                                <action selector="mp4NarrowBand" destination="Pl5-X0-SpR" id="ImK-YL-Koy"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="mp4 - WideBand" id="ZJp-op-iQt">
+                            <connections>
+                                <action selector="mp4WideBand" destination="Pl5-X0-SpR" id="TZs-4s-iZo"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="mp4 - High Quality" id="V9c-Up-bJ5">
+                            <connections>
+                                <action selector="mp4HighQuality" destination="Pl5-X0-SpR" id="S0m-Xf-ZIs"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="m4a - NarrowBand" id="bob-p8-FQR">
+                            <connections>
+                                <action selector="m4aNarrowBand" destination="Pl5-X0-SpR" id="VMz-1H-SLb"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="m4a - WideBand" id="OoK-GQ-GmZ">
+                            <connections>
+                                <action selector="m4aWideBand" destination="Pl5-X0-SpR" id="9NF-Sj-znM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="m4a - High Quality" id="IfH-sB-ZcH">
+                            <connections>
+                                <action selector="m4aHighQuality" destination="Pl5-X0-SpR" id="6BF-qV-EDQ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Playback Last Recording" id="KIL-PI-Tam">
+                            <connections>
+                                <action selector="playbackLastRecording" destination="Pl5-X0-SpR" id="uni-vY-NPv"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="sliderDurationLabel" destination="eum-b2-lCk" id="AEN-Yh-kQT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-311" y="4.5"/>
+        </scene>
+        <!--Play Back Interface Controller-->
+        <scene sceneID="6gq-KM-RuY">
+            <objects>
+                <controller hidesWhenLoading="NO" id="V95-Ax-MIa" customClass="AVPlayBackInterfaceController">
+                    <items>
+                        <table alignment="left" id="C6s-CG-Diz">
+                            <items>
+                                <tableRow id="DLX-y0-HIi" customClass="AVMediaPlaybackController">
+                                    <group key="rootItem" width="1" height="109.5" alignment="left" id="Axo-iz-HY9">
+                                        <items>
+                                            <movie width="1" height="1" alignment="left" id="jAW-UX-cxj"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="movie" destination="jAW-UX-cxj" id="XsM-96-wXo"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="playbackTable" destination="C6s-CG-Diz" id="vyk-KS-OEA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-475" y="-54"/>
+        </scene>
+        <!--Play Back Presenter Interface Controller-->
+        <scene sceneID="mwT-4R-E73">
+            <objects>
+                <controller hidesWhenLoading="NO" id="K1i-7j-qU8" customClass="AVPlayBackPresenterInterfaceController">
+                    <items>
+                        <label alignment="left" text="Start Time %" id="hC8-HJ-4LZ"/>
+                        <slider width="1" alignment="left" maximum="4" steps="1" id="HQT-TR-prX">
+                            <connections>
+                                <action selector="sliderDidSlide:" destination="K1i-7j-qU8" id="IRz-IF-1Ww"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Local Playback" id="1Uh-a9-x3r">
+                            <connections>
+                                <action selector="localPlaybackTapped" destination="K1i-7j-qU8" id="CHn-KL-vEf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Streaming Playback" id="oYI-4c-FuF">
+                            <connections>
+                                <action selector="streamingPlaybackTapped" destination="K1i-7j-qU8" id="pXV-L1-tQm"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Audio Only" id="re8-ap-0g6">
+                            <connections>
+                                <action selector="audioOnlyPlaybackTapped" destination="K1i-7j-qU8" id="fcd-P8-Mjh"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Video Auto Play" id="84t-L6-sbj">
+                            <connections>
+                                <action selector="videoAutoPlayTapped" destination="K1i-7j-qU8" id="lt5-JA-MjW"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Audio Auto Play" id="Ryx-12-mQU">
+                            <connections>
+                                <action selector="audioAutoPlayTapped" destination="K1i-7j-qU8" id="Hza-9C-4Zn"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-475" y="524"/>
+        </scene>
+    </scenes>
+</document>
